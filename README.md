@@ -155,8 +155,7 @@ WHERE Quantity IS NULL AND OrderDate BETWEEN '2024-07-01' AND '2024-09-01'
 ---
 
 ![Revenue by products and Products in demand](https://github.com/user-attachments/assets/b124b16c-ca17-45aa-976c-13306128dfb4)
-![Percentage fo revenue by Region](https://github.com/user-attachments/assets/5e2e33a6-3b0c-4008-bb95-3c38bc907d68) ![Revenue across months](https://github.com/user-attachments/assets/47aa5cb3-f939-47b0-9988-01c16c2539d9)
-![Sales Dashboard using Excel](https://github.com/user-attachments/assets/e0b01d4c-97d4-43ba-b46c-93bf66ef8aac)
+![Percentage fo revenue by Region](https://github.com/user-attachments/assets/5e2e33a6-3b0c-4008-bb95-3c38bc907d68) ![Revenue across months](https://github.com/user-attachments/assets/47aa5cb3-f939-47b0-9988-01c16c2539d9)  ![Sales Dashboard using Excel](https://github.com/user-attachments/assets/e0b01d4c-97d4-43ba-b46c-93bf66ef8aac)
 ![Report on Sales data](https://github.com/user-attachments/assets/9c510a7f-27fa-41d6-aa93-4de2bc04747e)
 
 
