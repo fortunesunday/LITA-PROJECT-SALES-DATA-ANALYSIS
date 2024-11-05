@@ -119,6 +119,7 @@ GROUP BY [SubscriptionType]
 ```
 
 #### Data Visualization
+---
 
 
 ![Pie chart](https://github.com/user-attachments/assets/41cee80c-5b85-41ed-9b6e-29dd1c713d61)
@@ -131,9 +132,12 @@ GROUP BY [SubscriptionType]
 
 
 #### Conclusions and Recommendations
+---
 After thorough analysis of the data, the following observations were made:
 - There was a 33% decrease in total revenue from 2022 to 2023. Number of subscriptions made were greatly reduced too.
-- The Customers in the East and North preferred the **Basic**subscription type, those in the south prefered the **Premium** subscription type while those in the west, the **Standard** subscription type.
+- The Customers in the East and North preferred the **Basic** subscription type, those in the south prefered the **Premium** subscription type while those in the west, the **Standard** subscription type.
 - The **Basic** subscription type was the most patronized
 
 Recommendations to boost sales include the following:
+
+Customers should be given some discount as a means of promoting patronage and gaining the customers' trust. This will help keep customers in the business in futeure. Also, competition might be the cause for the decline in revenue from 2022 to 2023, stategies to improve patronage should be put in place.
