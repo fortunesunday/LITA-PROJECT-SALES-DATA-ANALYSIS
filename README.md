@@ -1,6 +1,63 @@
-## REPORT-FOR-THE-CUSTOMER-DATA
-### Power BI Report for the Customer Data
-This repository contains a Power BI report that analyzes Customer data for the LITA Television. The analysis is made to gain insights on the business performance, identify trends with the aim of giving data driven solution to the problems, if any and to improve the Television performance and customers' satisfaction by making informed decisions.
+## LITA_Project
+
+#### PROJECT TITLE: Customer Data Analysis
+---
+[Project Overview](#project-overview)
+
+[Data Sources](#data-sources)
+
+[Tools Used](#tools-used)
+
+[Data Cleaning and Preparations](#data-cleaning-and-preparations)
+
+[Exploratory Data Analysis](#exploratory-data-analysis)
+
+[Data Analysis](#data-analysis)
+
+[Data Visualization](#data-visualization)
+
+
+#### Project Overview
+---
+This Data analysis project aims to analyze the Customer data for the LITA Television. The analysis is made to gain insights on the business performance, identify trends with the aim of giving data driven solution to the problems, if any and to improve the Television performance and customers' satisfaction by making informed decisions.
+
+#### Data Sources
+---
+The dataset used for this analysis was provided by the LITA Incubation hub, amd includes
+- Sales transactions (Canceled Subscription Revenue, Subscription start, Subscription end)
+- Product information (Subscription type)
+- Customer demographics (Customer ID, Customer Name, Region)
+
+#### Tools Used
+---
+ Microsoft Excel [Download Here](https://www.microsoft.com)
+  1.  For Data Cleaning
+  2.  For analysis
+  3.  For Data Visualization
+     
+- SQL - Structured Query Language for Querying of Data
+
+- Power BI for visualization
+  
+- GitHub for Portfolio building
+
+#### Data Cleaning and Preparations
+---
+In the inital phase of the Data cleaning and preparations, we performed the following action:
+1. Data Loading and Inspection
+2. Handling missing variables
+3. Data cleaning and formatting
+
+ #### Exploratory Data Analysis
+---
+EDA involved the exploring of the Data to answer some questions about the Data such as;
+- Total number of customers for each region
+- customers who cancelled their subscriptins within 6 months
+- Most popular subscription type
+- Average subscription duration for all customers
+- Total Revenue by subscription type
+- Top 3 regions by subscription cancellations
+- Total number if active and cancelled subscriptions
 
 ### **Problem Statement**
 The biggest challenge in the market today is caused basically due to inability of vendors to understand their customers' needs, season and time of specific needs. When Customers' are unsatisfied, there could be low patronage. This Report aims to analyze the Customer data to understand patterns, thereby providing actionable insights that can help the management make informed decisions.
@@ -9,11 +66,6 @@ The biggest challenge in the market today is caused basically due to inability o
 - Data cleaning and transformation using Power Query
 - Creating interactive visualizations and dashboards
 
-### Data Sourcing
-The dataset used for this analysis was provided by the LITA Incubation hub, amd includes
-- Sales transactions (Canceled Subscription Revenue, Subscription start, Subscription end)
-- Product information (Subscription type)
-- Customer demographics (Customer ID, Customer Name, Region)
 
 ### **Data Transformation**
 Data was thoroughly cleaned and transformed using the Power Query tool in Excel. The following transformations were made:
@@ -37,6 +89,28 @@ The final report includes several visualizations highlighting:
 - Monthly Performance
 - Quantity ordered by each region
 - Number of active and canceled subscriptions by Region
+
+#### Data Analysis
+---
+(basic lines of codes used during analysis are included including DAX functions)
+
+```SQL
+SELECT [SubscriptionType], COUNT(CustomerID) AS NumberofSubscriptions
+FROM ProjectCustomerData
+GROUP BY [SubscriptionType]
+
+SELECT CustomerID, CustomerName
+FROM ProjectCustomerData
+WHERE Canceled = 1 AND DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) <= 6
+
+#most popular subscription type
+SELECT [SubscriptionType], COUNT(CustomerID) AS NumberofSubscriptions
+FROM ProjectCustomerData
+GROUP BY [SubscriptionType]
+```
+
+#### Data Visualization
+
 
 Below is the Report created including slicers for appropriate filtering to gain deeper insight with the data.
 
