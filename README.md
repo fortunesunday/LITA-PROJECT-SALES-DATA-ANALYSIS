@@ -4,6 +4,8 @@
 ---
 [Project Overview](#project-overview)
 
+[Problem Statement](#problem-statement)
+
 [Data Sources](#data-sources)
 
 [Tools Used](#tools-used)
@@ -16,10 +18,18 @@
 
 [Data Visualization](#data-visualization)
 
+[Conclusions and Recommendations](#conclusions-and-recommendations)
+
 
 #### Project Overview
 ---
 This Data analysis project aims to analyze the Customer data for the LITA Television. The analysis is made to gain insights on the business performance, identify trends with the aim of giving data driven solution to the problems, if any and to improve the Television performance and customers' satisfaction by making informed decisions.
+
+
+#### Problem Statement
+---
+The biggest challenge in the market today is caused basically due to inability of vendors to understand their customers' needs, season and time of specific needs. When Customers' are unsatisfied, there could be low patronage. This Report aims to analyze the Customer data to understand patterns, thereby providing actionable insights that can help the management make informed decisions.
+
 
 #### Data Sources
 ---
@@ -27,10 +37,11 @@ The dataset used for this analysis was provided by the LITA Incubation hub, amd 
 - Sales transactions (Canceled Subscription Revenue, Subscription start, Subscription end)
 - Product information (Subscription type)
 - Customer demographics (Customer ID, Customer Name, Region)
+  
 
 #### Tools Used
 ---
- Microsoft Excel [Download Here](https://www.microsoft.com)
+ - Microsoft Excel [Download Here](https://www.microsoft.com)
   1.  For Data Cleaning
   2.  For analysis
   3.  For Data Visualization
@@ -40,6 +51,7 @@ The dataset used for this analysis was provided by the LITA Incubation hub, amd 
 - Power BI for visualization
   
 - GitHub for Portfolio building
+  
 
 #### Data Cleaning and Preparations
 ---
@@ -47,6 +59,7 @@ In the inital phase of the Data cleaning and preparations, we performed the foll
 1. Data Loading and Inspection
 2. Handling missing variables
 3. Data cleaning and formatting
+   
 
  #### Exploratory Data Analysis
 ---
@@ -58,16 +71,10 @@ EDA involved the exploring of the Data to answer some questions about the Data s
 - Total Revenue by subscription type
 - Top 3 regions by subscription cancellations
 - Total number if active and cancelled subscriptions
+  
 
-### **Problem Statement**
-The biggest challenge in the market today is caused basically due to inability of vendors to understand their customers' needs, season and time of specific needs. When Customers' are unsatisfied, there could be low patronage. This Report aims to analyze the Customer data to understand patterns, thereby providing actionable insights that can help the management make informed decisions.
-
-### **Skills**
-- Data cleaning and transformation using Power Query
-- Creating interactive visualizations and dashboards
-
-
-### **Data Transformation**
+#### Data Transformation
+---
 Data was thoroughly cleaned and transformed using the Power Query tool in Excel. The following transformations were made:
 - Removal of duplicates
 - Removal/filling of missing values as required
@@ -75,7 +82,8 @@ Data was thoroughly cleaned and transformed using the Power Query tool in Excel.
 The transformed data was then double checked in Power BI query for inconsistencies and was rectified where needed.
 
 
-### **Analysis and Visualizations**
+#### Analysis and Visualizations
+---
 The final report includes several visualizations highlighting:
 - Total Revenue
 - Average Revenue
@@ -89,16 +97,17 @@ The final report includes several visualizations highlighting:
 - Monthly Performance
 - Quantity ordered by each region
 - Number of active and canceled subscriptions by Region
+  
 
 #### Data Analysis
 ---
-(basic lines of codes used during analysis are included including DAX functions)
-
 ```SQL
+#Most popular subscription type
 SELECT [SubscriptionType], COUNT(CustomerID) AS NumberofSubscriptions
 FROM ProjectCustomerData
 GROUP BY [SubscriptionType]
 
+#Customers who cancelled their subscriptions within 6 months
 SELECT CustomerID, CustomerName
 FROM ProjectCustomerData
 WHERE Canceled = 1 AND DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) <= 6
@@ -112,11 +121,16 @@ GROUP BY [SubscriptionType]
 #### Data Visualization
 
 
-Below is the Report created including slicers for appropriate filtering to gain deeper insight with the data.
+![Pie chart](https://github.com/user-attachments/assets/41cee80c-5b85-41ed-9b6e-29dd1c713d61)
+
+
+![Bar chart](https://github.com/user-attachments/assets/a6f5e678-bf9e-4caa-947d-b1cee1183a1b)
+
 
 ![Report on Customer data](https://github.com/user-attachments/assets/3f379ba6-b4d5-4b2c-aac8-b143d595322e)
 
-### **Conclusions and Recommendations**
+
+#### Conclusions and Recommendations
 After thorough analysis of the data, the following observations were made:
 - There was a 33% decrease in total revenue from 2022 to 2023. Number of subscriptions made were greatly reduced too.
 - The Customers in the East and North preferred the **Basic**subscription type, those in the south prefered the **Premium** subscription type while those in the west, the **Standard** subscription type.
