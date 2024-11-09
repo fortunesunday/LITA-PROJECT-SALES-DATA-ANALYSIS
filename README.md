@@ -80,6 +80,7 @@ EDA involved the exploring of the Data to answer some questions about the Data s
 - Products with no sales in the last quarter
 
 
+![Screenshot 2024-11-09 154334](https://github.com/user-attachments/assets/21d726d4-f22c-4b80-8756-63c559ae35d8)
 
 ![Screenshot 2024-11-09 153611](https://github.com/user-attachments/assets/bc259dff-7fac-477d-b3ee-8a084b9616c0)
 
