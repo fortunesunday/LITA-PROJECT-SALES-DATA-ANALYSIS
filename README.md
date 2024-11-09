@@ -80,6 +80,8 @@ EDA involved the exploring of the Data to answer some questions about the Data s
 - Products with no sales in the last quarter
 
 
+![Screenshot 2024-11-09 153611](https://github.com/user-attachments/assets/bc259dff-7fac-477d-b3ee-8a084b9616c0)
+
 
 
 #### Data Transformation
